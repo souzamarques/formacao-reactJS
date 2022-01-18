@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
+import ListaDeNotas from "./components/ListaDeNotas";
+import FormularioCadastro from "./components/FormularioCadastro";
 
-function App() {
-  return (
-    <h1> Meu App React </h1>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <section>
+        <FormularioCadastro />
+        <ListaDeNotas />
+      </section>
+    );
+  }
 }
 
 export default App;
