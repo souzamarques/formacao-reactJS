@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./estilo.css";
 class FormularioCadastro extends Component {
-  
   constructor(props) {
     super(props);
     this.titulo = "";
@@ -12,7 +11,7 @@ class FormularioCadastro extends Component {
     evento.stopPropagation();
     this.titulo = evento.target.value;
   }
-  
+
   _handleMudancaTexto(evento) {
     evento.stopPropagation();
     this.texto = evento.target.value;
@@ -26,9 +25,7 @@ class FormularioCadastro extends Component {
 
   render() {
     return (
-      <form className="form-cadastro "
-        onSubmit={this._criarNota.bind(this)}
-      >
+      <form className="form-cadastro" onSubmit={this._criarNota.bind(this)}>
         <input
           type="text"
           placeholder="Título"
